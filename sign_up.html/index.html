@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Title>Typ hier je pincode</Title>
+
+  
+  <link rel = "stylesheet"
+   href = "main.css" type = "text/css" />
+<p><strong>Dit is mijn bank</strong></p>
+<label for="name">Name (4 to 8 characters):</label>
+</head>
+
+<input type="text" id="name" name="name" required
+       minlength="8" maxlength="10" size="15">
+
+<form action="Formserver.html" method="get">
+  <label for="GET-name">Password</label>
+  <input id="GET-name" type="text" name="name">
+  <input type="submit" value="Save">
+</form>
+
+<!-- Simple form which will send a POST request -->
+<!-- Form with fieldset, legend, and label -->
+<form action="Bankgegevens.html" method="post">
+  <fieldset>
+    <legend>Click me 100 times to get reward.</legend>
+    <input type="radio" name="radio" id="radio">
+    <label for="radio">after clicking 100 times you gain 1 level</label>
+  </fieldset>
+</form>
+
+<form action="" method="get" class="form-example">
+  <div class="form-example">
+    <label for="name">Enter your name: </label>
+    <input type="text" name="name" id="name" required>
+  </div>
+  <div class="form-example">
+    <label for="email">Enter your email: </label>
+    <input type="email" name="email" id="email" required>
+  </div>
+  <div class="form-example">
+    <input type="submit" value="Subscribe!">
+  </div>
+</form>
